@@ -28,8 +28,8 @@ function basicArmModel(origin: Vec3, orientation: Quaternion, hand: ?string) {
   armModelVector[2] = -0.4;
   rotateByQuaternion(armModelVector, orientation);
 
-  origin[0] = armModelVector[0] + (hand === 'left' ? -0.3 : 0.3);
-  origin[1] = armModelVector[1] - 0.3;
+  origin[0] = armModelVector[0] + (hand === 'left' ? -0.0 : 0.0);
+  origin[1] = armModelVector[1] - 0.0;
   origin[2] = armModelVector[2];
 }
 
